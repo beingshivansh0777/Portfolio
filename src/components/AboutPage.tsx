@@ -14,8 +14,8 @@ export const AboutPage = () => {
         <h1 className="text-5xl font-bold mb-6 text-cyan-500">About Me</h1>
         <p className="text-lg md:text-xl mb-8 text-gray-700 dark:text-gray-300">
           Welcome to my portfolio! I'm Shivansh Mishra, Full Stack Developer. I am always learning new technologies and evolving, thrive on the
-          latest web design trends. Beyond coding, I am a photographer📷.
-          I enjoy building scalable applications and exploring new technologies and tools.
+          latest web design trends.I enjoy building scalable applications and exploring new tools.
+          Beyond coding, I am a photographer📷.
         </p>
         <p className="text-lg md:text-xl mb-8 text-gray-700 dark:text-gray-300">
           Feel free to explore my projects and get in touch if you'd want to collaborate on something exciting.🚀
