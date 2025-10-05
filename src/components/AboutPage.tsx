@@ -23,12 +23,17 @@ export const AboutPage = () => {
 
         <h2 className="text-3xl font-semibold mb-4 text-purple-500">Skills & Tools</h2>
         <div className="flex flex-wrap justify-center gap-4 mb-8">
+           <span className="bg-cyan-200 text-cyan-800 px-4 py-2 rounded-full">JavaScript</span>
+           <span className="bg-cyan-200 text-cyan-600 px-4 py-2 rounded-full">C++</span>
           <span className="bg-cyan-200 text-cyan-800 px-4 py-2 rounded-full">React</span>
           <span className="bg-blue-200 text-blue-800 px-4 py-2 rounded-full">Next.js</span>
           <span className="bg-purple-200 text-purple-800 px-4 py-2 rounded-full">Node.js</span>
           <span className="bg-purple-200 text-purple-800 px-4 py-2 rounded-full">Express.js</span>
           <span className="bg-pink-200 text-pink-800 px-4 py-2 rounded-full">Tailwind CSS</span>
           <span className="bg-green-200 text-green-800 px-4 py-2 rounded-full">MongoDB</span>
+          <span className="bg-green-200 text-green-600 px-4 py-2 rounded-full">Git</span>
+          <span className="bg-green-200 text-grey-400 px-4 py-2 rounded-full">Github</span>
+         <span className="bg-green-200 text-green-800 px-4 py-2 rounded-full">VS code</span>
         </div>
 
         <button
