@@ -6,15 +6,23 @@ export const Experience = () => {
       title: 'Full Stack Developer',
       company: 'Micro IT Company',
       period: 'May 2025 - June 2025',
-      description: 'Developed and maintained multiple client projects, implementing modern UI/UX designs and RESTful APIs. Collaborated with cross-functional teams.',
+      description: [
+        'Developed and maintained multiple client projects, implementing modern UI/UX designs and RESTful APIs.',
+        'Collaborated with cross-functional teams.'
+      ],
     },
     {
       title: 'Freelancer',
-      company: 'Creative Web Studio',
+      company: '',
       period: 'Ongoing',
-      description: 'Built responsive and accessible web applications with focus on performance optimization and user experience. Worked closely with designers.',
+      description: [
+        'Built responsive and accessible web applications with a strong focus on performance optimization, scalability, and user experience.',
+        'Collaborated closely with designers and clients to transform ideas into high-quality, production-ready solutions.',
+        'Completed 15+ real-world projects, ranging from business websites and dashboards to custom learning platforms.',
+        'Passionate about writing clean, maintainable code and delivering results that align with client goals.',
+      ],
     },
-  ];
+  ];  
 
   return (
     <section className="min-h-screen px-6 py-20">
@@ -49,15 +57,14 @@ export const Experience = () => {
                     <Calendar className="w-4 h-4" />
                     <span>{exp.period}</span>
                   </div>
-                  
                 </div>
               </div>
 
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                {exp.description}
-              </p>
-
-            
+              <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400 leading-relaxed">
+                {exp.description.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
