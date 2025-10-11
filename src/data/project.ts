@@ -1,5 +1,6 @@
 import iTask from '../assets/iTask11.png'
 import quillspace from '../assets/quillspcae22.png'
+import booknest from '../assets/booknestss.png'
 
 export const projects = [
   {
@@ -25,6 +26,18 @@ export const projects = [
     github: 'https://github.com/beingshivansh0777/QuillSpace',
     demo: 'https://quill-space-ashen.vercel.app/',
     image:quillspace,
+  },
+    {
+    id: 3,
+    title: 'BookNest',
+    shortDesc: 'Shop, browse, and pay for your favorite books effortlessly with BookNest, built on the MERN stack.',
+    fullDesc:
+      'BookNest is a full-featured online bookstore built with the MERN stack, offering a seamless experience for both users and admins. Users can browse, search, and purchase books with secure payments, while admins can easily manage the book catalog, track orders, and oversee the platform. With a modern, responsive design and complete administrative control, BookNest provides a smooth, intuitive, and secure platform for book lovers and store managers alike.',
+    features : 'User Authentication,Book Browsing & Search,Shopping Cart & Checkout,Stripe Payment Integration,Admin Panel,Responsive Design',
+    tech: [''],
+    github: 'https://github.com/beingshivansh0777/BookNest',
+    demo: 'https://book-nest-user.vercel.app/',
+    image:booknest,
   },
   
 ];
