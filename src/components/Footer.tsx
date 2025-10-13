@@ -40,7 +40,7 @@ export const Footer = () => {
               href="mailto:luckumishra2625@gmail.com"
               className="text-gray-600 dark:text-gray-400 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors duration-300"
             >
-              luckumishra2625@gmail.com
+              luckymishra2625@gmail.com
             </a>
           </div>
 
