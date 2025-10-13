@@ -16,7 +16,7 @@ export const Navigation = ({ activeSection, onNavigate }: NavigationProps) => {
   ];
 
   return (
-    <nav className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
+    <nav className="fixed bottom-2 left-1/2 -translate-x-1/2 z-50">
       <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg rounded-full px-6 py-4 shadow-2xl border border-gray-200 dark:border-gray-700 flex items-center gap-2">
         {navItems.map((item, index) => (
           <div key={item.id} className="flex items-center">
