@@ -63,13 +63,11 @@ export const Footer = () => {
           </div>
 
           <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400 text-sm">
-            <span>Made with</span>
-            <Heart className="w-4 h-4 text-red-500 animate-pulse" />
-            <span>by Shivansh Mishra</span>
+            
           </div>
 
           <p className="text-gray-500 dark:text-gray-500 text-sm">
-            © {new Date().getFullYear()} All rights reserved
+           
           </p>
         </div>
       </div>
