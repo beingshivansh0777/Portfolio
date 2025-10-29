@@ -101,7 +101,7 @@ export const Home = ({ onNavigate }: { onNavigate: (section: string) => void }) 
             websites that elevate brands.🚀✨
           </p>
           <a
-            href="mailto:luckumishra2625@gmail.com"
+            href="mailto:luckymishra2625@gmail.com"
             className="inline-block bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-xl"
           >
             Get In Touch
