@@ -13,7 +13,7 @@ export const AboutPage = () => {
       <div className="max-w-4xl w-full text-center relative z-10">
         <h1 className="text-5xl font-bold mb-6 text-cyan-500">About Me</h1>
         <p className="text-lg md:text-xl mb-8 text-gray-700 dark:text-gray-300">
-          Welcome to my portfolio! I'm Shivansh Mishra, Full Stack Developer. I am always learning new technologies and evolving, thrive on the
+          Welcome to my portfolio! I'm Shivansh Mishra, Full Stack Developer.Currently I am pursuing Btech(IT) from SGSITS college. I am always learning new technologies and evolving, thrive on the
           latest web design trends.I enjoy building scalable applications and exploring new tools.
           Beyond coding, I am a photographer📷.
         </p>
