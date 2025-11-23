@@ -22,22 +22,14 @@ export const Navigation = ({ activeSection, onNavigate }: NavigationProps) => {
           <div key={item.id} className="flex items-center">
             <button
               onClick={() => onNavigate(item.id)}
-              className={`group relative p-3 rounded-full transition-all duration-300 transform overflow-hidden ${
+              className={`group relative p-3 rounded-full transition-all duration-300 transform ${
                 activeSection === item.id
-                  ? 'text-white scale-110 shadow-lg'
+                  ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white shadow-lg scale-110'
                   : 'hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-400'
-              } hover:scale-110`}
+              } hover:scale-110`} // Icon pop-up on hover
               aria-label={item.label}
             >
-              {/* Icon */}
-              <item.icon className="w-5 h-5 relative z-10" />
-
-              {/* ⭐ Diagonal Gradient with SAME original colors */}
-              {activeSection === item.id && (
-                <span
-                  className="absolute inset-0 z-0 bg-gradient-to-r from-cyan-500 to-blue-500 animate-diagonal-light"
-                />
-              )}
+              <item.icon className="w-5 h-5" />
 
               {/* Tooltip */}
               <span
@@ -47,7 +39,7 @@ export const Navigation = ({ activeSection, onNavigate }: NavigationProps) => {
                            opacity-0 group-hover:opacity-100 
                            translate-y-2 group-hover:translate-y-0
                            transition-all duration-300 ease-out 
-                           pointer-events-none shadow-lg z-20"
+                           pointer-events-none shadow-lg"
               >
                 {item.label}
               </span>
@@ -65,12 +57,10 @@ export const Navigation = ({ activeSection, onNavigate }: NavigationProps) => {
         {/* Theme Toggle */}
         <button
           onClick={toggleTheme}
-          className="group relative p-3 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-400 transition-all duration-300 transform hover:scale-110 overflow-hidden"
+          className="group relative p-3 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-400 transition-all duration-300 transform hover:scale-110"
           aria-label="Toggle theme"
         >
-          {theme === 'light' ? <Moon className="w-5 h-5 relative z-10" /> : <Sun className="w-5 h-5 relative z-10" />}
-
-          {/* Tooltip */}
+          {theme === 'light' ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
           <span
             className="absolute -top-12 left-1/2 -translate-x-1/2 
                        bg-gray-900 dark:bg-white text-white dark:text-gray-900 
