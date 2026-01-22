@@ -101,32 +101,58 @@ export const Home = ({
           </div>
         </div>
 
-        {/* Connect Button - Circular Jellyfish */}
-        <button
+        {/* Connect Button */}
+   <button
           onClick={() => navigate("/connect")}
           className="
+    group
     fixed z-40
-    bottom-24 right-8        /* Desktop - unchanged */
+    bottom-24 right-8
     sm:bottom-20 sm:right-6
-    max-sm:bottom-[87px] max-sm:right-1  /* Mobile slightly lower */
+    max-sm:bottom-[87px] max-sm:right-1
   "
         >
           <div
             className="
+      absolute -top-14 right-0
+      opacity-0 scale-95
+      transition-all duration-300 ease-out
+      pointer-events-none
+      group-hover:opacity-100 group-hover:scale-100
+    "
+          >
+            <div
+              className="
+        relative bg-white text-black
+        px-3 py-2
+        rounded-xl shadow-lg
+        text-[11px] font-medium
+        whitespace-nowrap
+      "
+            >
+              Got an idea? Let’s talk 👋
+              <span
+                className="
+          absolute -bottom-2 right-4
+          w-3 h-3 bg-white
+          rotate-45
+        "
+              />
+            </div>
+          </div>
+          <div
+            className="
       relative overflow-hidden bg-black
       rounded-[24px_24px_18px_18px]
-
-      w-24 h-12                    /* Desktop */
-      max-sm:w-18 max-sm:h-9       /* Mobile smaller */
+      w-24 h-12
+      max-sm:w-18 max-sm:h-9
     "
           >
             {/* Siri liquid */}
-            <div className="absolute inset-0 animate-siri-strong">
+            <div className="absolute inset-0">
               <div className="absolute -top-5 -left-5 w-20 h-20 bg-cyan-400 rounded-full blur-lg opacity-80 mix-blend-screen" />
-              <div className="absolute -bottom-5 -right-5 w-20 h-20 bg-purple-500 rounded-full blur-lg opacity-80 mix-blend-screen animate-siri-delay" />
+              <div className="absolute -bottom-5 -right-5 w-20 h-20 bg-purple-500 rounded-full blur-lg opacity-80 mix-blend-screen" />
             </div>
-
-            {/* Text */}
             <div className="relative z-10 w-full h-full flex items-center justify-center">
               <span className="text-white text-[12px] max-sm:text-[10px] font-semibold tracking-[0.12em] uppercase">
                 Connect
