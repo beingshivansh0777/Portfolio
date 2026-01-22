@@ -24,7 +24,7 @@ export const Home = ({
             Shivansh Mishra
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8">
-            A Full Stack Developer who builds scalable web apps.
+            Designing and developing scalable full-stack web solutions aligned with business objectives.
           </p>
         </div>
 
