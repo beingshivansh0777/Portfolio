@@ -11,20 +11,27 @@ export const Home = ({
   return (
     <section className="min-h-screen flex items-center justify-center px-6 py-20">
       <div className="max-w-6xl w-full">
-        {/* Hero Section */}
-        <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-block mb-6 relative">
+  {/* Hero Section */}
+        <div className="text-center mb-20 animate-fade-in">
+          <div className="inline-block mb-8 relative">
             <div className="w-32 h-32 rounded-full bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 p-1 animate-spin-slow">
               <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center">
                 <Code className="w-16 h-16 text-cyan-500" />
               </div>
             </div>
           </div>
+
           <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 bg-clip-text text-transparent">
             Shivansh Mishra
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8">
-            Designing and developing scalable full-stack web solutions aligned with business objectives.
+
+          <p className="max-w-3xl mx-auto text-lg md:text-2xl text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+            Designing and developing scalable full-stack web solutions aligned
+            with business objectives.
+          </p>
+
+          <p className="text-sm md:text-base italic uppercase tracking-widest text-gray-500 dark:text-gray-500">
+            Built for scale. Designed for business.
           </p>
         </div>
 
