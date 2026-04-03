@@ -30,7 +30,7 @@ export const Footer = () => {
         <div className="flex flex-col gap-4 text-gray-700 dark:text-gray-300 max-w-sm">
           
           <p className="text-lg font-medium">
-            We are open for business. Feel free to drop us a line or send your brief
+Got an idea? Let’s turn it into reality — reach out anytime.
           </p>
 
           <div className="flex items-center gap-3">
