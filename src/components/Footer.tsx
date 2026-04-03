@@ -6,19 +6,19 @@ export const Footer = () => {
       icon: Github,
       label: 'GitHub',
       url: 'https://github.com/beingshivansh0777',
-      hoverColor: 'hover:text-gray-900 dark:hover:text-white',
+      hoverColor: 'hover:text-black dark:hover:text-white',
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
       url: 'https://www.linkedin.com/in/shivansh-mishra-233b5b2aa',
-      hoverColor: 'hover:text-blue-600',
+      hoverColor: 'hover:text-blue-600 dark:hover:text-blue-400',
     },
     {
       icon: Twitter,
       label: 'Twitter',
       url: 'https://x.com/Mishra0857',
-      hoverColor: 'hover:text-sky-500',
+      hoverColor: 'hover:text-sky-500 dark:hover:text-sky-400',
     },
   ];
 
@@ -66,9 +66,13 @@ export const Footer = () => {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-white dark:text-white transition-all duration-300 hover:scale-110 hover:shadow-lg ${link.hoverColor}`}
+                className={`p-3 rounded-full bg-gray-100 dark:bg-gray-800 
+                text-gray-500 dark:text-gray-400 
+                transition-all duration-300 
+                hover:scale-110 hover:shadow-lg 
+                ${link.hoverColor}`}
               >
-                <link.icon className="w-5 h-5" />
+                <link.icon className="w-5 h-5 stroke-current" />
               </a>
             ))}
           </div>
