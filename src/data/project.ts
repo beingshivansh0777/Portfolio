@@ -6,48 +6,90 @@ export const projects = [
   {
     id: 1,
     title: 'i-Task',
-    shortDesc: 'A feature-rich productivity app with drag & drop and smart task tracking',
+    shortDesc:
+      'A feature-rich productivity app with drag & drop and smart task tracking',
     fullDesc:
       'i-Task reimagines the classic todo list as a complete productivity tool, built with performance and usability in mind. Users can organize work with subtasks and intuitive drag-and-drop reordering, attach files directly to any task, and monitor progress through built-in analytics and history logs. The interface supports Dark/Light mode with smooth transitions and an animated gradient background, while smart filters and sorting keep even large task lists easy to navigate. All data persists locally via LocalStorage, ensuring a fast, offline-friendly experience with zero backend dependency — making it a lightweight yet powerful solution for personal task management.',
-    features: 'Secure Login/Signup, Drag & Drop Task Reordering, Subtasks & File Attachments, Progress Tracking & Analytics, Task History & Undo, Smart Filters & Sorting, Dark/Light Mode, Fully Responsive UI, LocalStorage Persistence',
+
+    features: [
+      'Secure Login / Signup',
+      'Drag & Drop Task Reordering',
+      'Subtasks & File Attachments',
+      'Progress Tracking & Analytics',
+      'Task History & Undo',
+      'Smart Filters & Sorting',
+      'Dark / Light Mode',
+      'Fully Responsive UI',
+      'LocalStorage Persistence',
+    ],
+
     tech: ['React', 'Clerk'],
     github: 'https://github.com/beingshivansh0777/Advance-iTask-Todo',
     demo: 'https://advance-i-task-todo.vercel.app/',
     image: iTask,
   },
+
   {
     id: 2,
-    title: 'QuiillSpace',
-    shortDesc: 'A Blogging platform(AI) using MERN Stack',
+    title: 'QuillSpace',
+    shortDesc: 'An AI-powered blogging platform built using the MERN stack',
     fullDesc:
       'A full-stack, real-time blogging platform built with the MERN stack, where writers publish and schedule posts, readers follow authors and engage through infinitely nested comments, and every interaction — a like, a follow, a new comment — updates instantly across all connected users via Socket.io. The backend is optimized with Redis caching and deployed alongside a fully Dockerized development environment with CI/CD.',
-    features: `🔐 Secure authentication with email/password and Google OAuth, JWT-based sessions, and self-service account management
-💬 Infinitely nested comment threads with Instagram-style collapsed replies and live @mention autocomplete with real-time inline highlighting
-👥 Follow system with live follower/following counts and a personalized "Following" feed
-🔔 Real-time notifications delivered instantly over WebSocket for comments, likes, follows, mentions, and more
-⚡ Live updates across the app — vote counts, new comments, and support ticket replies all sync instantly for every connected viewer
-✍️ Full publishing workflow with drafts, scheduled posts (auto-published via cron), AI-assisted content generation, and autosave
-🎫 Built-in customer support system with threaded, real-time ticket conversations between users and admins
-📊 Admin dashboard with live-updating analytics, content moderation tools, and a real-time reports/tickets queue
-🗄️ Redis-backed caching layer with automatic graceful fallback to MongoDB, improving response times on high-traffic endpoints
-🐳 Fully containerized with Docker Compose and deployed via a GitHub Actions CI/CD pipeline (build → deploy → smoke test)`,
-    tech: [
-      'Frontend: React · Vite · Tailwind CSS · React Router · Axios · Socket.io Client · Quill (Rich Text Editor) · Recharts',
-      'Backend: Node.js · Express · MongoDB · Mongoose · Socket.io · Redis · JWT Authentication · bcrypt',
-      'Third-Party Services: Google OAuth · Google Gemini API · ImageKit · Resend (Transactional Email)',
-      'DevOps & Tooling: Docker · Docker Compose · GitHub Actions (CI/CD) · Nginx · Helmet · Pino (Logging) · Swagger/OpenAPI',
+
+    features: [
+      'Secure authentication with Email/Password & Google OAuth',
+      'JWT-based sessions & self-service account management',
+      'Infinitely nested comment threads with collapsed replies',
+      'Live @mention autocomplete with real-time highlighting',
+      'Follow system with live follower / following counts',
+      'Personalized Following feed',
+      'Real-time notifications via WebSocket',
+      'Live updates for likes, comments & support tickets',
+      'Draft, Schedule & Publish workflow',
+      'AI-assisted content generation with Google Gemini',
+      'Autosave for blog posts',
+      'Automated scheduled publishing using Cron Jobs',
+      'Real-time customer support ticket system',
+      'Admin dashboard with live analytics',
+      'Content moderation & reports management',
+      'Redis-backed caching with MongoDB fallback',
+      'Dockerized development environment',
+      'GitHub Actions CI/CD pipeline',
     ],
+
+    tech: [
+      'Frontend: React · Vite · Tailwind CSS · React Router · Axios · Socket.io Client · Quill · Recharts',
+      'Backend: Node.js · Express · MongoDB · Mongoose · Socket.io · Redis · JWT · bcrypt',
+      'Third-Party Services: Google OAuth · Google Gemini API · ImageKit · Resend',
+      'DevOps & Tooling: Docker · Docker Compose · GitHub Actions · Nginx · Helmet · Pino · Swagger/OpenAPI',
+    ],
+
     github: 'https://github.com/beingshivansh0777/QuillSpace',
     demo: 'https://quill-space-ashen.vercel.app/',
     image: quillspace,
   },
+
   {
     id: 3,
     title: 'BookNest',
-    shortDesc: 'A full-featured online bookstore with secure checkout and admin control',
+    shortDesc:
+      'A full-featured online bookstore with secure checkout and admin control',
     fullDesc:
       'BookNest is a complete e-commerce platform for book lovers, built on the MERN stack with a focus on performance, security, and usability. On the storefront, users can browse a curated catalog, search by title or category, manage a persistent shopping cart, and complete purchases through integrated Stripe payments with full transaction security. Behind the scenes, a dedicated admin dashboard gives store managers real-time control over inventory, order status, and catalog updates — eliminating manual overhead and keeping the store accurate and up to date. Built with a mobile-first, fully responsive interface, BookNest delivers a consistent, polished shopping experience across devices, demonstrating end-to-end e-commerce architecture from authentication and payments to admin operations.',
-    features: 'User Authentication, Book Browsing & Search, Persistent Shopping Cart, Stripe Payment Integration, Admin Dashboard for Order & Inventory Management, Real-Time Order Tracking, Fully Responsive Design',
+
+    features: [
+      'User Authentication',
+      'Book Browsing & Search',
+      'Category-based Book Filtering',
+      'Persistent Shopping Cart',
+      'Stripe Payment Integration',
+      'Secure Checkout',
+      'Admin Dashboard',
+      'Order & Inventory Management',
+      'Real-Time Order Tracking',
+      'Fully Responsive Design',
+    ],
+
     tech: ['MERN Stack', 'Stripe'],
     github: 'https://github.com/beingshivansh0777/BookNest',
     demo: 'https://book-nest-user.vercel.app/',
