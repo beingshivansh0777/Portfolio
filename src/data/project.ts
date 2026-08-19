@@ -21,7 +21,18 @@ export const projects = [
     shortDesc: 'A Blogging platform(AI) using MERN Stack',
     fullDesc:
       'A full-stack, real-time blogging platform built with the MERN stack, where writers publish and schedule posts, readers follow authors and engage through infinitely nested comments, and every interaction — a like, a follow, a new comment — updates instantly across all connected users via Socket.io. The backend is optimized with Redis caching and deployed alongside a fully Dockerized development environment with CI/CD.',
-    features: '🔐 Secure Authentication (Email/Password + Google OAuth) • 💬 Infinitely Nested Comments with @Mention Autocomplete • 👥 Follow System with Personalized Feed • 🔔 Real-Time Notifications via WebSocket • ⚡ Live Sync for Votes, Comments & Tickets • ✍️ Full Publishing Workflow with Scheduled Posts & AI Content Generation • 🎫 Real-Time Customer Support Ticketing • 📊 Admin Dashboard with Live Analytics • 🗄️ Redis Caching with MongoDB Fallback • 🐳 Dockerized with GitHub Actions CI/CD',
+    features: [
+      '🔐 Secure Authentication (Email/Password + Google OAuth)',
+      '💬 Infinitely Nested Comments with @Mention Autocomplete',
+      '👥 Follow System with Personalized Feed',
+      '🔔 Real-Time Notifications via WebSocket',
+      '⚡ Live Sync for Votes, Comments & Tickets',
+      '✍️ Full Publishing Workflow with Scheduled Posts & AI Content Generation',
+      '🎫 Real-Time Customer Support Ticketing',
+      '📊 Admin Dashboard with Live Analytics',
+      '🗄️ Redis Caching with MongoDB Fallback',
+      '🐳 Dockerized with GitHub Actions CI/CD',
+    ],
     tech: [
       'Frontend: React · Vite · Tailwind CSS · React Router · Axios · Socket.io Client · Quill (Rich Text Editor) · Recharts',
       'Backend: Node.js · Express · MongoDB · Mongoose · Socket.io · Redis · JWT Authentication · bcrypt',
