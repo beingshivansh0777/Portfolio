@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Mail, Phone, MapPin } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail, MapPin } from 'lucide-react';
 
 export const Footer = () => {
   const socialLinks = [
@@ -28,15 +28,18 @@ export const Footer = () => {
 
         {/* LEFT SIDE - CONTACT */}
         <div className="flex flex-col gap-4 text-gray-700 dark:text-gray-300 max-w-sm">
-          
+
           <p className="text-lg font-medium">
-Got an idea? Let’s turn it into reality — reach out anytime.
+            Got an idea? Let’s turn it into reality — reach out anytime.
           </p>
 
           <div className="flex items-center gap-3">
             <Mail className="w-5 h-5 text-cyan-500" />
-            <a href="mailto:luckymishra2625@gmail.com" className="hover:underline">
-              luckymishra2625@gmail.com
+            <a
+              href="mailto:shivanshmishradev@gmail.com"
+              className="hover:underline"
+            >
+              shivanshmishradev@gmail.com
             </a>
           </div>
 
@@ -49,7 +52,7 @@ Got an idea? Let’s turn it into reality — reach out anytime.
 
         {/* RIGHT SIDE - SOCIAL */}
         <div className="flex flex-col gap-5 items-start md:items-end">
-          
+
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
             Follow us to be always up to date
           </h3>
